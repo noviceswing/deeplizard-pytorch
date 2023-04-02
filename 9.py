@@ -77,6 +77,7 @@ print(t4)
 # torch.from_numpy()    torch.Tensor()
 
 ### the best choice ###
+
 """
     torch.tensor() 
     torch.as_tensor()
