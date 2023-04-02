@@ -87,7 +87,7 @@ except Exception as e:
     在Pytorch中创建张量对象
 """
 
-# 有初始数据的情况一般讲有4种
+# 有初始数据的情况下创建,一般讲有4种方法
 
 data = np.array([1, 2, 3]) 
 print(type(data))
