@@ -8,7 +8,7 @@ tt = torch.tensor([
     [7, 8, 9]
 ])
 shape = tt.shape
-# print(shape)
+print(shape)
 # 输出为:torch.Size([3, 3])
 
 
