@@ -67,13 +67,3 @@ import torch
 # 张量的数据类型可以通过dtype属性获取，它返回一个torch.dtype对象，表示张量的数据类型
 # 张量的存储方式可以通过storage方法获取，它返回一个torch.Storage对象，表示张量的存储方式
 # 张量的存储方式决定了张量在内存中的存储方式，可以通过它来实现张量的共享内存等功能
-tensor = torch.Tensor([2, 3])
-print(tensor.shape)  # 输出：torch.Size([2, 3])
-print(tensor.dtype)  # 输出：torch.float32
-print(tensor.storage())  # 输出：  0.0000
-                            0.0000
-                            0.0000
-                            0.0000
-                            0.0000
-                            0.0000
-                            [torch.FloatStorage of size 6]
