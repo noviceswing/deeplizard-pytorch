@@ -106,6 +106,7 @@ print(tt.reshape(3, 16).shape)
 # 更简单的方法
 print(tt.reshape(3, -1).shape)# -1指的是自动计算该维度的大小，以适应张量中的元素数量
 # 这里的-1在从头开始实现flatten时出现过
+
 # 从头开始实现flatten
 def flatten(t):
     # 获取张量的元素数量

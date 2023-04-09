@@ -4,12 +4,12 @@
 
 # 从conda开始
 """
-    conda
+    conda安装
 """
 # 建议使用miniconda是因为它是一个轻量级的conda发行版，只包含conda、Python和一些必要的包，
 # 而不像Anaconda那样包含大量的预装软件包，这使得miniconda更加灵活和易于管理。
 
-# 国内可使用清华镜像
+# 国内可使用清华镜像下载
 # https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/
 
 # 我选择的版本
@@ -26,10 +26,12 @@
 # conda -V(大写)
 # 出现conda版本即表示安装成功
 
+# conda 23.3.1
+
 """
     conda换源
 """
-# 更新至国内下载源(win环境)
+# 更新至国内下载源(windows系统)
 # 原因：This can significantly speed up the download process and reduce the chance of errors occurring during the download.
 # 生成.condarc文件：这个文件是用来配置conda的下载源的
 # conda config --set show_channel_urls yes
@@ -79,8 +81,11 @@ custom_channels:
 ############### 使用CPU ###############
 # 执行代码
 # conda install pytorch==1.12.0 torchvision==0.13.0 torchaudio==0.12.0 cpuonly -c pytorch
-
-
+# 验证是否安装成功CPU版本测试代码在  3.py
+# 出现以下提示
+# 1.12.0
+# False
+# None
 
 ############### 使用GPU ###############
 
@@ -104,7 +109,7 @@ custom_channels:
 # 它是基于CUDA的，提供了高效的卷积、池化、归一化等操作的实现。
 # 因此，cuDNN可以与CUDA一起使用，加速深度学习模型的训练和推理过程。
 
-# 测试代码在  3.py
+# 验证是否安装成功GPU版本测试代码在  3.py
 
 # 出现以下提示
 # 1.12.0

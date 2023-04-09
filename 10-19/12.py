@@ -39,7 +39,7 @@ print(t2[0][0])
 print(t1 + t2)
 # 同样的减、乘、除也是元素操作
 
-# 使用标量值得算术运算
+# 使用标量值的算术运算
 # 标量是0维，那么可以使用标量与t1可以进行元素操作吗？
 
 print(t1)
@@ -58,6 +58,7 @@ print(t1.mul(2))
 
 print(t1 / 2)
 print(t1.div(2))
+# div是divide的缩写
 
 # 答案是可以的，这就是我们时常听到的广播机制
 
@@ -158,11 +159,12 @@ t = torch.tensor([
 ], dtype = torch.float32)
 
 # 比较运算
+# 也是用于元素操作的
 # PyTorch还支持比较运算，例如等于（==）、大于（>）、小于（<）等
 # 比较运算的结果是一个布尔张量，其中每个元素都是True或False
 
-# False if the operation is False
-# True if the operation is True
+# return False if the operation is False
+# return True if the operation is True
 
 # t.eq()函数用于比较张量t中的元素是否等于0，返回一个布尔张量
 print(t.eq(0))

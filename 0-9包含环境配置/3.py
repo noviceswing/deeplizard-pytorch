@@ -11,3 +11,4 @@ print(torch.cuda.is_available())
 
 # 查看CUDA版本
 print(torch.version.cuda)
+
